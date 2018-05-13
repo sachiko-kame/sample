@@ -102,6 +102,14 @@
 
 **$ git branch -a**
 
+- リモートブランチの取得
+
+**$ git checkout -b branch1 origin/branch1**
+
+- ブランチの移動
+
+**$ git checkut branch1**
+
 
 
 
