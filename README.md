@@ -88,7 +88,7 @@ $ git push --delete origin newbranch
 $ git tag -a Tag1 -m "タグのコメント"
 ```
 
--　タグをgithubにあげる
+- タグをgithubにあげる
 
 ```
 $ git push origin Tag1
