@@ -1,11 +1,11 @@
-* {
+/* * {
   font-size: 25px;
   color: black;
   font-weight: bold;
   letter-spacing: 0.3em;
   font-family: arial unicode ms;
   text-align: center;
-}
+} */
 
 /*https://saruwakakun.com/html-css/reference/buttons*/
 
@@ -28,4 +28,30 @@
   /*下に動く*/
   border-bottom: none;
   /*線を消す*/
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+/* マークダウンテーブルに線 参考 https://saruwakakun.com/html-css/basic/table*/
+table {
+  border-collapse: collapse;
+}
+table th, table td {
+  border: solid 1px black;
+  /*実線 1px 黒*/
+}
+
+/*コードブロックの装飾用 */
+pre code {
+  display: block;
+  width: 100%;
+  background-color: #364549;
+  color: #e3e3e3;
+  margin: 0 3px;
+}
+
+.language-js{
+  color: orange;
 }
