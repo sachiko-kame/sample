@@ -1,5 +1,9 @@
-#frame{
-  font-size: 25px;
+#image1, #image2 {
+  width: 100px;
+}
+
+#msg, #frame, #btn1{
+  font-size: 15px;
   color: black;
   font-weight: bold;
   letter-spacing: 0.3em;
