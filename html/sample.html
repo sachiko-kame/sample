@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sample</title>
+  <link rel="stylesheet" type="text/css" href="../css/sample.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src='https://cdn.jsdelivr.net/gh/rsms/markdown-wasm@v1.1.2/dist/markdown.js'></script>
+  <script type="text/javascript" src="../js/sample.js"></script>
+</head>
+
+<script>
+  
+</script>
+
+<body>
+  <p id="msg">Sampleですか？</p>
+  <div id="frame">
+    <img id="image1" src="../img/image.png">
+    <img id="image2" src="../img/image.png">
+  </div>
+  <div style="text-align: center;"><button class="square_btn" id="btn1">Button</button></div>
+
+  <h3 style="text-align: left; color: white; background-color: rgb(25, 61, 82);">markedのお試し</h3>
+  <div style="font-size: 10px;">テキスト参考入力 【記事参考 https://mebee.info/2020/07/21/post-14683】</div>
+  <pre style="font-size: 12px; background-color: gray;">
+本家URL: https://marked.js.org/
+- aaa
+- aaa
+
+[qiitaのURL](https://qiita.com/)
+
+```
+sasasa
+sasasas
+```
+
+**sasasa**aaaaa*aaaaaa*
+
+# aaaa
+## aaa
+  </pre>
+  <div style="height:300px; display: flex;">
+    <textarea class="row" name="marked_textarea" style="word-break: break-all; width: calc(100%/2)" placeholder="ここに入力"
+      id="marked_textarea" rows="5" maxlength="10000"></textarea>
+    <div class="row" style="width: calc(100%/2); border: 0.5px solid orange; word-break: break-all; overflow: scroll;">
+      <div id="marked_content"></div>
+    </div>
+  </div>
+
+  <h3 style="text-align: left; color: white; background-color: rgb(25, 61, 82);">markdown-wasmのお試し</h3>
+  <div style="font-size: 10px;">テキスト参考入力 【記事参考 https://zenn.dev/phi/articles/markdown-wasm-how-to】</div>
+  <pre style="font-size: 12px; background-color: gray;">
+本家github: https://github.com/rsms/markdown-wasm
+参考サンプル: https://github.com/rsms/markdown-wasm/blob/master/example/example.md?plain=1
+
+Hello from *[link](https://sachiko-kame.github.io/)* to __everyone__ `reading this`
+![](https://sachiko-kame.github.io/images/sachiko.png)
+
+&lt;img src="https://sachiko-kame.github.io/images/sachiko.png" width="100px"&gt;
+
+```js
+function codeBlocks() {
+  return "Can be inserted"
+}
+```
+
+| Column 1 | Column 2 | Column 3 | Column 4 |
+|----------|:---------|:--------:|---------:|
+| default  | left     | center   | right    |
+  </pre>
+  <div style="height:300px; display: flex;">
+    <textarea class="row" name="markdown-wasm_textarea" style="word-break: break-all; width: calc(100%/2)"
+      placeholder="ここに入力" id="markdown-wasm_textarea" rows="5" maxlength="10000"></textarea>
+    <div class="row" style="width: calc(100%/2); border: 0.5px solid orange; word-break: break-all; overflow: scroll;">
+      <div id="markdown-wasm_content"></div>
+    </div>
+  </div>
+
+
+  <h3 style="text-align: left; color: white; background-color: rgb(25, 61, 82);">何かしら起こせるよう場所</h3>
+  <div style="font-size: 10px;">攻撃してみる的な場面</div>
+  <pre style="font-size: 12px; background-color: gray;">
+    攻撃サンプル
+  </pre>
+  <div style="height:300px; display: flex;">
+    <textarea class="row" name="xss_textarea" style="word-break: break-all; width: calc(100%/2)" placeholder="ここに入力"
+      id="xss_textarea" rows="5" maxlength="10000"></textarea>
+    <div class="row" style="width: calc(100%/2); border: 0.5px solid orange; word-break: break-all; overflow: scroll;">
+      <div id="xss_content"></div>
+    </div>
+  </div>
+
+
+</body>
+
+<script type="text/javascript" src="../js/add.js"></script>
+
+<footer style="text-align: center; background-color: lightblue;" class="footer">
+  <p>footer</p>
+</footer>
+
+</html>
